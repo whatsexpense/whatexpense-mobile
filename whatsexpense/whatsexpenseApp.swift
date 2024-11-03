@@ -6,8 +6,10 @@ import SwiftUI
 
 @main
 struct whatsexpenseApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     @StateObject private var appCoordinator = AppCoordinator(path: .init())
-    @StateObject private var appState = AppState()
+    @StateObject private var appState = AppState.shared
 
     var body: some Scene {
         WindowGroup {
@@ -37,14 +39,6 @@ private extension View {
         )
         .navigationDestination(
             for: SettingCoordinator.self,
-            destination: { $0.view() }
-        )
-        .navigationDestination(
-            for: LanguageCoordinator.self,
-            destination: { $0.view() }
-        )
-        .navigationDestination(
-            for: CurrencyCoordinator.self,
             destination: { $0.view() }
         )
     }

@@ -1,9 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "$" : {
-
-    },
     "Chat" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -60,9 +57,6 @@
         }
       }
     },
-    "Hello, World!" : {
-
-    },
     "Insights" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -85,17 +79,6 @@
         }
       }
     },
-    "Logout" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Đăng xuất"
-          }
-        }
-      }
-    },
     "Open Website" : {
       "localizations" : {
         "vi" : {
@@ -113,6 +96,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cài đặt"
+          }
+        }
+      }
+    },
+    "Sign in with Apple" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng nhập với Apple"
+          }
+        }
+      }
+    },
+    "Sign in with Google" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng nhập với Google"
           }
         }
       }

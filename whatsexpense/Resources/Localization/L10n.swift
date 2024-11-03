@@ -18,6 +18,8 @@ public extension LocalizedStringKey {
         public static var USD: LocalizedStringKey { "USD" }
         public static var VND: LocalizedStringKey { "VND" }
 
+        public static var SignInWithGoogle: LocalizedStringKey { "Sign in with Google" }
+        public static var SignInWithApple: LocalizedStringKey { "Sign in with Apple" }
         public static var SignIn: LocalizedStringKey { "SignIn" }
         public static var ForgotPassword: LocalizedStringKey { "ForgotPassword" }
         public static var SignOut: LocalizedStringKey { "SignOut" }

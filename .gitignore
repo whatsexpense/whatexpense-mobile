@@ -158,3 +158,6 @@ xcuserdata
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+GoogleService-Info.plist
+environment.production.swift

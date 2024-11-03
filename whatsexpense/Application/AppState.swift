@@ -20,6 +20,8 @@ class AppState: ObservableObject {
     var system = System()
     var permissions = Permissions()
 
+    private init() {}
+
     func signIn() {
         isLoggedIn = true
     }
