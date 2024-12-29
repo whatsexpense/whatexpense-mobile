@@ -3,6 +3,7 @@
 //  whatsexpense
 
 import SwiftUI
+import DesignSystem
 
 // MARK: - Tabs Builder
 enum Tabs: Int, CaseIterable, Hashable {
@@ -60,14 +61,14 @@ struct MainView: View {
                 label: {
                     Image(systemName: "gear")
                         .foregroundStyle(colorScheme == .light
-                                         ? Constants.Color.secondary
-                                         : Constants.Color.primary)
+                                         ? WEDS.Color.secondary
+                                         : WEDS.Color.primary)
                 })
         })
         .screenMode(.full)
         .tint(colorScheme == .light
-              ? Constants.Color.secondary
-              : Constants.Color.primary)
+              ? WEDS.Color.secondary
+              : WEDS.Color.primary)
     }
 }
 

@@ -61,9 +61,11 @@ public enum AuthTokenApiInfo: ApiInfo {
 
 public struct AuthRepository: AuthServicing {
     private let keychainStore = KeychainWrapper.standard
-    @Injected private var apiService: URLSessionAPIClient<AuthTokenApiInfo>
+    private var apiService: URLSessionAPIClient<AuthTokenApiInfo>
 
-    public init() {}
+    public init(apiService: URLSessionAPIClient<AuthTokenApiInfo>) {
+        self.apiService = apiService
+    }
 
     public func signIn(
         token: String,

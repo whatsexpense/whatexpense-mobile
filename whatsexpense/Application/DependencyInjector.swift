@@ -27,6 +27,10 @@ class DIContainer {
     private let lock = ReadWriteLock()
     private var services: [String: Any] = [:]
 
+    private init() {
+        registerDependencies()
+    }
+
     // MARK: Register
     func register<T>(
         _ type: T.Type,

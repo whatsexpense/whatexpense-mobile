@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-extension Color {
+public extension Color {
     init(hex: String) {
         let r, g, b, a: CGFloat
 

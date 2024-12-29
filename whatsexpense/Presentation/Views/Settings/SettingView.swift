@@ -3,6 +3,7 @@
 //  whatsexpense
 
 import SwiftUI
+import DesignSystem
 
 struct SettingView: View {
     @EnvironmentObject var appState: AppState
@@ -17,12 +18,12 @@ struct SettingView: View {
                 ForEach(viewModel.dataSource, id: \.self) { model in
                     CardView(
                         title: Text(model.item.title)
-                                .font(Constants.Font.ArialNarrow.regular)
+                                .font(WEDS.Font.ArialNarrow.regular)
                                 .adaptableForegroundStyle(colorScheme == .light
                                                  ? model.color.title.light
                                                  : model.color.title.dark),
                         detail: Text(model.item.detail)
-                            .font(Constants.Font.ArialNarrow.regular)
+                            .font(WEDS.Font.ArialNarrow.regular)
                             .adaptableForegroundStyle(colorScheme == .light
                                              ? model.color.detail.light
                                              : model.color.detail.dark),
@@ -39,8 +40,8 @@ struct SettingView: View {
             Section {
                 CardView(
                     title: Text(.L10n.SignOut)
-                        .font(Constants.Font.ArialNarrow.regular)
-                        .adaptableForegroundStyle(Constants.Color.danger),
+                        .font(WEDS.Font.ArialNarrow.regular)
+                        .adaptableForegroundStyle(WEDS.Color.danger),
                     action: viewModel.signOut)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea(.all)
